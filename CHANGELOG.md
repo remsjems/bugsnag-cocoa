@@ -1,6 +1,48 @@
 Changelog
 =========
 
+## 5.6.5 (7 Nov 2016)
+
+### Bug fixes
+
+* Fix assignment of `beforeSendBlocks` to incorrect property name
+  [Spike Brehm](https://github.com/spikebrehm)
+  [#125](https://github.com/bugsnag/bugsnag-cocoa/pull/125)
+
+## 5.6.4 (7 Nov 2016)
+
+### Miscellaneous
+
+* Expose `app`, `appState`, `device`, `deviceState`, and `error` to crash report
+  callback blocks
+
+## 5.6.3 (21 Oct 2016)
+
+### Bug fixes
+
+* Fix `autoNotify`: Disabling unhandled exception capturing only sends
+  user-reported exceptions via `Bugsnag.notify()`
+
+## 5.6.2 (10 Oct 2016)
+
+### Bug fixes
+
+* Update imports to be compatible with KSCrash 1.8.8+
+* Lock KSCrash dependency to 1.8.13 to reduce instability
+
+## 5.6.1 (05 Oct 2016)
+
+### Miscellaneous
+
+* Include thread type in payload to match new payload specification
+
+## 5.6.0 (26 Sep 2016)
+
+### Enhancements
+
+* Add support for attaching a custom stacktrace to an error report
+* Upgrade required version of KSCrash
+
 ## 5.5.0 (14 Sep 2016)
 
 ### Enhancements
