@@ -343,10 +343,14 @@ void BSSerializeJSONDictionary(NSDictionary *dictionary, char **destination) {
   default:
     orientation = @"unknown";
   }
+  NSString *existingOrientation = [[self state] getTab:@"deviceState"][@"orientation"];
+  if ([orientation isEqualToString:existingOrientation])
+      return;
+
   [[self state] addAttribute:@"orientation"
                    withValue:orientation
                toTabWithName:@"deviceState"];
-  if ([self.configuration automaticallyCollectBreadcrumbs]) {
+  if (existingOrientation != nil && [self.configuration automaticallyCollectBreadcrumbs]) {
     [self addBreadcrumbWithBlock:^(BugsnagBreadcrumb *_Nonnull breadcrumb) {
       breadcrumb.type = BSGBreadcrumbTypeState;
       breadcrumb.name = BSGBreadcrumbNameForNotificationName(notif.name);

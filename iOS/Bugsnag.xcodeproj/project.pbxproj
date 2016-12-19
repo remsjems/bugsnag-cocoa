@@ -36,6 +36,7 @@
 		8A87351E1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A87351D1C6D2ADE00EDBD5B /* BSGKSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AAA64011D2407CE00A9A123 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA64001D2407CE00A9A123 /* Kiwi.framework */; };
 		8AAA64081D24088600A9A123 /* BugsnagSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAA64071D24088600A9A123 /* BugsnagSpec.m */; };
+		8AD9FA901E086B68002859A7 /* iOSAutoBreadcrumbsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9FA8F1E086B68002859A7 /* iOSAutoBreadcrumbsSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		8AAA63FE1D2404BB00A9A123 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = "../development/Nocilla/build/Debug-iphoneos/Nocilla.framework"; sourceTree = "<group>"; };
 		8AAA64001D2407CE00A9A123 /* Kiwi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kiwi.framework; path = "../development/Kiwi/build/Debug-iphoneos/Kiwi.framework"; sourceTree = "<group>"; };
 		8AAA64071D24088600A9A123 /* BugsnagSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugsnagSpec.m; path = ../Tests/BugsnagSpec.m; sourceTree = SOURCE_ROOT; };
+		8AD9FA8F1E086B68002859A7 /* iOSAutoBreadcrumbsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOSAutoBreadcrumbsSpec.m; path = ../Tests/iOSAutoBreadcrumbsSpec.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				8A2C8F8B1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m */,
+				8AD9FA8F1E086B68002859A7 /* iOSAutoBreadcrumbsSpec.m */,
 				8A2C8F8C1C6BBFDD00846019 /* BugsnagCrashReportTests.m */,
 				8A4E733E1DC13281001F7CC8 /* BugsnagConfigurationTests.m */,
 				8AAA64071D24088600A9A123 /* BugsnagSpec.m */,
@@ -320,6 +323,7 @@
 				8A2C8F8F1C6BBFDD00846019 /* BugsnagBreadcrumbsTest.m in Sources */,
 				8A2C8F911C6BBFDD00846019 /* BugsnagSinkTests.m in Sources */,
 				8AAA64081D24088600A9A123 /* BugsnagSpec.m in Sources */,
+				8AD9FA901E086B68002859A7 /* iOSAutoBreadcrumbsSpec.m in Sources */,
 				8A2C8F901C6BBFDD00846019 /* BugsnagCrashReportTests.m in Sources */,
 				8A4E733F1DC13281001F7CC8 /* BugsnagConfigurationTests.m in Sources */,
 			);
